@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@300;400;500;600;700&display=swap');
+
+/* Se você tiver o arquivo da fonte Neue Machina, descomente e ajuste o caminho abaixo */
+/*
+@font-face {
+  font-family: 'Neue Machina';
+  src: url('./fonts/NeueMachina-Regular.woff2') format('woff2'),
+       url('./fonts/NeueMachina-Regular.woff') format('woff');l
+  font-weight: 300;
+  font-style: normal;
+}
+*/
+
+.summit {
+  min-height: 100vh;
+  background: #00254c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.summit-container {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+}
+
+.summit-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.circle-image {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.circle-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.summit-content {
+  flex: 1;
+  color: white;
+  max-width: 500px;
+}
+
+.summit-content h1 {
+  font-family: 'Neue Machina', 'Orbitron', 'Segoe UI', sans-serif;
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 1.1;
+  margin-bottom: 2.5rem;
+  color: white;
+}
+
+.summit-description {
+  margin-bottom: 3rem;
+}
+
+.summit-description p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 300;
+}
+
+.reserve-btn {
+  background: #00254c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: none;
+  letter-spacing: 0.02em;
+  box-shadow: 0 4px 12px rgba(25, 118, 210, 0.3);
+}
+
+.reserve-btn:hover {
+  background: #1565c0;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(25, 118, 210, 0.4);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .summit-container {
+    flex-direction: column;
+    gap: 3rem;
+    text-align: center;
+  }
+  
+  .circle-image {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .summit-content h1 {
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+  }
+  
+  .summit-description p {
+    font-size: 1rem;
+  }
+  
+  .reserve-btn {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .summit {
+    padding: 1rem;
+  }
+  
+  .circle-image {
+    width: 250px;
+    height: 250px;
+  }
+  
+  .summit-content h1 {
+    font-size: 2.2rem;
+  }
+  
+  .summit-description p {
+    font-size: 0.9rem;
+  }
+}
