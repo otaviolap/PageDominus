@@ -1,0 +1,21 @@
+/* Estilos do Footer foram movidos para inline style no componente Footer.js */
+
+.footer-content h2 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+.footer-content p {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+.footer-content h2 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+.footer-content p {
+  margin: 5px 0;
+  font-size: 1rem;
+}

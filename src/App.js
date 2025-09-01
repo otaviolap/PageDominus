@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import Footer from './Footer';
 import backgroundImage from './background.png';
 import Summit from './Summit';
 import SummitHighlights from './SummitHighlights';
@@ -47,6 +48,9 @@ function App() {
       
       {/* Quinta seção - About Organizers */}
       <AboutOrganizers />
+      
+      {/* Footer */}
+      <Footer />
     </div>
   );
 }
