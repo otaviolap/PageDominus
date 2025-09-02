@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Footer from './Footer';
+import Contact from './Contact';
 import backgroundImage from './background.png';
 import Summit from './Summit';
 import SummitHighlights from './SummitHighlights';
@@ -8,11 +9,13 @@ import AboutOrganizers from './AboutOrganizers';
 import AppFeatures from './AppFeatures';
 
 function App() {
-  const scrollToSummit = () => {
-    window.scrollTo({
-      top: window.innerHeight,
-      behavior: 'smooth'
-    });
+  const scrollToContact = () => {
+    const contactSection = document.querySelector('.contact-section');
+    if (contactSection) {
+      contactSection.scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
   };
 
   return (
@@ -32,7 +35,7 @@ function App() {
               REVOLUCIONE A ADMINISTRAÇÃO DO SEU CONDOMÍNIO COM<br />
               NOSSA PLATAFORMA COMPLETA.<br />
             </div>
-            <button className="cta-btn" onClick={scrollToSummit}>Saiba mais</button>
+            <button className="cta-btn" onClick={scrollToContact}>Saiba mais</button>
           </div>
         </div>
       </div>
@@ -48,6 +51,17 @@ function App() {
       
       {/* Quinta seção - About Organizers */}
       <AboutOrganizers />
+      
+      {/* Linha divisória */}
+      <div style={{
+        width: '100%',
+        height: '1px',
+        background: 'linear-gradient(90deg, #535151ff 0%, #ffffffff 50%, #535151ff 100%)',
+        margin: '0',
+      }}></div>
+      
+      {/* Sexta seção - Contact */}
+      <Contact />
       
       {/* Footer */}
       <Footer />

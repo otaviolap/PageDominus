@@ -68,10 +68,22 @@ body {
   font-family: 'Sapphire March', 'Cinzel', serif;
   font-size: 5.5rem;
   font-weight: 450;
-  letter-spacing: -0.09em;
+  letter-spacing: -0.05em;
   margin-bottom: 4rem;
-  color: #00254c;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  position: relative;
+  background: linear-gradient(110deg, 
+    #00254c 0%, 
+    #00254c 40%, 
+    #ffffff 50%, 
+    #00254c 60%, 
+    #00254c 100%);
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: chromeShine 16s linear infinite;
+  filter: drop-shadow(0 0 8px rgba(255,255,255,0.3));
+  text-shadow: none;
   margin-top: -30px;
 }
 
@@ -172,5 +184,16 @@ h1 {
   
   .subtitle {
     font-size: 0.8rem;
+  }
+}
+
+@keyframes chromeShine {
+  0% { 
+    background-position: -300% 0;
+    filter: drop-shadow(0 0 8px rgba(255,255,255,0.1));
+  }
+  100% { 
+    background-position: 300% 0;
+    filter: drop-shadow(0 0 15px rgba(255,255,255,0.4));
   }
 }

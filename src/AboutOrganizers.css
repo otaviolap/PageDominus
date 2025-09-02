@@ -13,7 +13,7 @@
 
 .about-organizers {
   min-height: 100vh;
-  background: linear-gradient(225deg, #00254c 0%, #003a6b 50%, #004a8a 100%);
+  background: linear-gradient(180deg, #004a8a 0%, #003a6b 50%, #00254c 100%);
   display: flex;
   align-items: center;
   justify-content: center;
