@@ -4,7 +4,7 @@ import './AppFeatures.css';
 
 function AppFeatures() {
   return (
-    <div className="app-features">
+    <div id="app-features" className="app-features">
       <div className="features-container">
         <div className="features-header">
           <h1>Funcionalidades<br />do Aplicativo</h1>

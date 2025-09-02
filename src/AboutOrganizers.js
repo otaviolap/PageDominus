@@ -3,7 +3,7 @@ import './AboutOrganizers.css';
 
 function AboutOrganizers() {
   return (
-    <div className="about-organizers">
+    <div id="about-organizers" className="about-organizers">
       <div className="organizers-container">
         <div className="organizers-images">
           <div className="organizer-item first">

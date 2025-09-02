@@ -3,7 +3,7 @@ import './SummitHighlights.css';
 
 function SummitHighlights() {
   return (
-    <div className="summit-highlights">
+    <div id="summit-highlights" className="summit-highlights">
       <div className="highlights-container">
         <div className="highlights-left">
           <h1>Destaques<br />da Nossa<br />Startup</h1>

@@ -33,7 +33,7 @@ function Footer() {
             WebkitTextFillColor: 'transparent',
             fontFamily: '"Orbitron", "Segoe UI", sans-serif',
           }}>
-            PageDominus
+            Dominus
           </h2>
           <p style={{
             fontSize: '1rem',
@@ -65,7 +65,7 @@ function Footer() {
               gap: '10px',
             }}>
               <span style={{ color: '#60a5fa' }}>📍</span>
-              Rua da Inovação, 123, Centro Tecnológico
+              Rua Guilherme Farel, 670. Londrina-PR
             </p>
             <p style={{
               fontSize: '0.95rem',
@@ -75,7 +75,7 @@ function Footer() {
               gap: '10px',
             }}>
               <span style={{ color: '#60a5fa' }}>📞</span>
-              (11) 99999-9999
+              (43) 99921-9978
             </p>
             <p style={{
               fontSize: '0.95rem',
@@ -85,7 +85,7 @@ function Footer() {
               gap: '10px',
             }}>
               <span style={{ color: '#60a5fa' }}>✉️</span>
-              contato@pagedominus.com
+              atendimentodominusbrasil@gmail.com
             </p>
           </div>
         </div>
@@ -101,10 +101,15 @@ function Footer() {
             Links Rápidos
           </h3>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-            {['Sobre Nós', 'Funcionalidades', 'Planos', 'Suporte', 'Blog'].map((link) => (
+            {[
+              { name: 'Sobre Nós', section: 'summit' },
+              { name: 'Funcionalidades', section: 'app-features' },
+              { name: 'Destaques', section: 'summit-highlights' },
+              { name: 'Equipe', section: 'about-organizers' }
+            ].map((link) => (
               <a
-                key={link}
-                href="#"
+                key={link.name}
+                href={`#${link.section}`}
                 style={{
                   color: '#d1d1d1',
                   textDecoration: 'none',
@@ -115,7 +120,7 @@ function Footer() {
                 onMouseOver={(e) => e.target.style.color = '#60a5fa'}
                 onMouseOut={(e) => e.target.style.color = '#d1d1d1'}
               >
-                {link}
+                {link.name}
               </a>
             ))}
           </div>
@@ -142,7 +147,7 @@ function Footer() {
             color: '#888',
             margin: 0,
           }}>
-            &copy; 2025 PageDominus. Todos os direitos reservados.
+            &copy; 2025 Dominus. Todos os direitos reservados.
           </p>
           
           <div style={{

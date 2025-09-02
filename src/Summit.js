@@ -4,7 +4,7 @@ import summitImage from './SegundaPágina.png';
 
 function Summit() {
   return (
-    <div className="summit">
+    <div id="summit" className="summit">
       <div className="summit-container">
         <div className="summit-image">
           <div className="circle-image">

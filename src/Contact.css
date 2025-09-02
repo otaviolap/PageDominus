@@ -96,11 +96,12 @@
   letter-spacing: 0.18em;
   margin-bottom: 8px;
   text-align: center;
-  color: #00254c !important;
-  background: linear-gradient(45deg, #00254c, #00254c);
+  color: #4a90e2 !important;
+  background: linear-gradient(45deg, #6bb6ff, #14477d);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  -webkit-text-stroke: 0.5px rgba(0, 37, 76, 0.3);
 }
 
 .contact-form-inside p {
@@ -211,9 +212,9 @@
   height: 59px;
   background: linear-gradient(135deg, #00254c 0%, #003d7a 100%);
   color: white;
-  border: none;
+  border: solid 2pxblack;
   border-radius: 50%;
-  font-size: 0.85rem;
+  font-size: 0.80rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
